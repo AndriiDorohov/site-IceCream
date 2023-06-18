@@ -1,0 +1,118 @@
+<!-- Модальное окно с бекдропом -->
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <form class="buy-form js-speaker-form">
+      <button
+        data-modal-close
+        class="modal__close-btn"
+        type="button"
+        aria-label="Close modal window"
+      >
+        <svg class="modal__close-icon" width="18" height="18">
+          <use href="./images/icons/sprite.svg#icon-close-modal"></use>
+        </svg>
+      </button>
+
+      <b class="buy__title">Check this form and buy now!</b>
+
+      <label class="buy__group">
+        <span class="buy__label">Name *</span>
+        <span class="buy__area">
+          <input
+            class="buy__input"
+            type="text"
+            name="name"
+            pattern="^[A-Za-zА-Яа-яЁё\s]+$"
+            required
+            autofocus
+          />
+          <svg class="buy__icon" width="18" height="18">
+            <use href="./images/icons/sprite.svg#icon-form-name"></use>
+          </svg>
+        </span>
+      </label>
+
+      <label class="buy__group">
+        <span class="buy__label">Phone *</span>
+        <span class="buy__area">
+          <input
+            class="buy__input"
+            type="tel"
+            name="tel"
+            placeholder="460123456789"
+            pattern="[0-9]{12,12}"
+            required
+          />
+          <svg class="buy__icon" width="18" height="18">
+            <use href="./images/icons/sprite.svg#icon-form-phone"></use>
+          </svg>
+        </span>
+      </label>
+
+      <label class="buy__group">
+        <span class="buy__label">E-mail</span>
+        <span class="buy__area">
+          <input class="buy__input" type="email" name="email" />
+          <svg class="buy__icon" width="18" height="18">
+            <use href="./images/icons/sprite.svg#icon-form-mail"></use>
+          </svg>
+        </span>
+      </label>
+
+      <label for="flavor" class="buy__group buy__group--label">
+        <span class="buy__label">Choose your flavor</span>
+        <select id="flavor" name="flavor" class="buy__select">
+          <optgroup label="Fruits flavor" class="buy__optgroup">
+            <option value="bubblegum" class="buy__option">BubbleGum</option>
+            <option value="chocolate" class="buy__option">Сhocolate</option>
+            <option value="banana" class="buy__option">Banana</option>
+            <option value="vanilla" class="buy__option">Vanilla</option>
+            <option value="pineapple" class="buy__option" selected>
+              Pineapple
+            </option>
+            <option value="strawberry" class="buy__option">Strawberry</option>
+          </optgroup>
+
+          <optgroup label="Drinks flavor" class="buy__optgroup">
+            <option value="drpepper" class="buy__option">Dr.Pepper</option>
+            <option value="fanta" class="buy__option">Fanta</option>
+            <option value="cocacola" class="buy__option">Coca-Cola</option>
+            <option value="sprite" class="buy__option">Sprite</option>
+          </optgroup>
+        </select>
+      </label>
+
+      <label class="buy__commit">
+        <span class="buy__label">Your wishes</span>
+        <textarea
+          name="comment"
+          rows="2"
+          placeholder="Wanna mix of flavors?"
+          class="buy__textarea"
+        ></textarea>
+      </label>
+
+      <label class="policy-block">
+        <input
+          class="checkbox visually-hidden"
+          type="checkbox"
+          name="policy"
+          value="agree"
+          required
+          checked
+        />
+        <span class="policy__icon"></span>
+        <span class="policy__text"
+          >By clicking submit you agree to our
+          <a href="#" class="policy__link">Privacy Policy</a></span
+        >
+      </label>
+
+      <div class="btn-block">
+        <button type="submit" class="buy-form__btn" aria-label="Send form">
+          Send
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

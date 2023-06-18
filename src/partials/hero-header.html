@@ -1,0 +1,179 @@
+<header class="page-header">
+  <div class="container header__container">
+    <a href="./" class="logo"
+      ><img
+        src="./images/icons/logo.png"
+        alt="Логотип Icecream"
+        width="200"
+        height="50"
+        loading="lazy"
+    /></a>
+
+    <div class="menu__wraper">
+      <button
+        type="button"
+        class="menu-button"
+        aria-expanded="false"
+        aria-controls="menu__container"
+        data-menu-button
+      >
+        <svg class="menu__icons" aria-label="Переключатель мобильного меню" width="20" height="15">
+          <use class="icon-close" href="./images/icons/sprite.svg#icon-close"></use>
+          <use class="icon-burger" href="./images/icons/sprite.svg#icon-Burger"></use>
+        </svg>
+      </button>
+
+      <div class="menu__container" id="menu__container" data-menu>
+        <button type="submit" class="btn__buy menu__buy" data-modal-open-two>
+          Buy now
+          <svg class="menu-buy__icon" width="6" height="8">
+            <use href="./images/icons/sprite.svg#menu-vector-arrow"></use>
+          </svg>
+        </button>
+        <nav class="navigation">
+          <ul class="list menu">
+            <li class="menu__item">
+              <a href="#" class="link current menu__link">Home</a>
+            </li>
+            <li class="menu__item">
+              <a href="#about" class="link menu__link">About us</a>
+            </li>
+            <li class="menu__item">
+              <a href="#how" class="link menu__link">How it’s made?</a>
+            </li>
+            <li class="menu__item">
+              <a href="#products" class="link menu__link">Our products</a>
+            </li>
+            <li class="menu__item">
+              <a href="#contacts" class="link menu__link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <button type="submit" data-modal-open class="btn__buy header__buy">
+        Buy now
+        <svg class="header-buy__icon" width="6" height="8">
+          <use href="./images/icons/sprite.svg#menu-vector-arrow"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero__container">
+    <div class="hero__content">
+      <div class="hero__title-wrap">
+        <h1 class="hero__title">
+          ice cream made with <span class="hero__title--coloring">passion</span>
+        </h1>
+        <ul class="hero__buttons list">
+          <li class="hero__button">
+            <a href="#products" class="bttn bttn__dark"> Products </a>
+          </li>
+          <li class="hero__button">
+            <a href="#how" class="bttn bttn__light">How it’s made?</a>
+          </li>
+        </ul>
+      </div>
+      <div class="card">
+        <picture>
+          <source
+            srcset="
+              /src/images/desktop/hero-2-1200.png    1x,
+              /src/images/desktop/hero-2-1200@2x.png 2x
+            "
+            media="(min-width: 1280px)"
+          />
+          <source
+            srcset="/src/images/tablet/hero-2-768.png 1x, /src/images/tablet/hero-2-768@2x.png 2x"
+            media="(min-width: 768px)"
+          />
+          <img
+            class="card__image"
+            src="/src/images/tablet/hero-2-768.png"
+            alt="jug of milk"
+            loading="lazy"
+          />
+        </picture>
+        <div class="card__content">
+          <p class="card__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et
+          </p>
+          <a class="card__link" href="#how" aria-label="link to article">
+            <picture>
+              <source
+                srcset="
+                  /src/images/desktop/hero-arrow-d.png    1x,
+                  /src/images/desktop/hero-arrow-d@2x.png 2x
+                "
+                media="(min-width: 1280px)"
+              />
+              <source
+                srcset="
+                  /src/images/tablet/hero-arrow-t.png    1x,
+                  /src/images/tablet/hero-arrow-t@2x.png 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <img src="/src/images/tablet/hero-arrow-t.png" alt="link arrow" loading="lazy" />
+            </picture>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="hero__image">
+      <picture>
+        <source
+          srcset="/src/images/mobile/hero-1-320.png 1x, /src/images/mobile/hero-1-320@2x.png 2x"
+          media="(max-width: 767px)"
+        />
+        <source
+          srcset="/src/images/desktop/hero-1-1200.png 1x, /src/images/desktop/hero-1-1200@2x.png 2x"
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="/src/images/tablet/hero-1-768.png 1x, /src/images/tablet/hero-1-768@2x.png 2x"
+          media="(min-width: 768px)"
+        />
+        <img
+          class="hero__icecream"
+          src="/src/images/mobile/hero-1-320.png"
+          alt="icecream"
+          loading="lazy"
+        />
+      </picture>
+    </div>
+    <div class="retail">
+      <div class="retail__content">
+        <span class="retail__number">16</span>
+        <span class="retail__type">cafes</span>
+      </div>
+      <div class="retail__content">
+        <span class="retail__number">23</span>
+        <span class="retail__type">food trucks</span>
+      </div>
+      <div class="retail__tastygirl">
+        <picture>
+          <source
+            srcset="
+              /src/images/desktop/hero-3-1200.png    1x,
+              /src/images/desktop/hero-3-1200@2x.png 2x
+            "
+            media="(min-width: 1280px)"
+          />
+          <source
+            srcset="/src/images/tablet/hero-3-768.png 1x, /src/images/tablet/hero-3-768@2x.png 2x"
+            media="(min-width: 768px)"
+          />
+          <img
+            src="/src/images/tablet/hero-3-768.png"
+            alt="what a tasty icecream young lady says"
+            loading="lazy"
+          />
+        </picture>
+      </div>
+    </div>
+  </div>
+</section>
