@@ -1,6 +1,5 @@
 .page-header {
   background-color: transparent;
-  // position: fixed;
   position: absolute;
   width: 100%;
   top: 0;
@@ -8,7 +7,6 @@
 }
 
 .header__container {
-  // position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -24,7 +22,7 @@
   }
 }
 
-// Общий див для кнопки-бургер, меню и кнопки купить
+// Common div for the button, menu and buy buttons
 
 .menu__wraper {
   @media screen and (min-width: 768px) {
@@ -33,7 +31,7 @@
   }
 }
 
-//  переключатель мобильного меню
+//  Mobile menu switch
 
 .menu-button {
   z-index: 1100;
@@ -75,16 +73,12 @@
     }
   }
 
-  // @media screen and (min-width: 768px) and (max-width: 1279px) {
-  //   margin-right: 20px;
-  // }
   @media screen and (min-width: 1280px) {
     display: none;
   }
 }
 
-// оформлени позиционирования ссылок и кнопки купить в  мобильной и десктопной версии
-
+// Design of the positioning of links and the buy button in the mobile and desktop versions
 .menu__container {
   transition: opacity $transition-duration $timing-function,
     visibility $transition-duration $timing-function;
@@ -112,7 +106,7 @@
   }
 }
 
-// Оформление стилей шрифта, внешних отступов для ссылок в меню
+// Design of font styles, external margins for links in the menu
 .menu {
   @include font(700, 14px, 1.29);
   @media screen and (min-width: 1280px) {
@@ -151,7 +145,7 @@
     display: inline-block;
   }
 }
-// Оформление кнопок купить
+// The design of the buy buttons
 .btn__buy {
   position: relative;
   display: inline-flex;

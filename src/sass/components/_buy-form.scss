@@ -1,11 +1,11 @@
-// Форма для модального окна
+// Modal form
 
 .buy-form {
   width: 100%;
   padding: 40px;
 }
 
-// Тайтл для всей формы
+// Title form
 
 .buy__title {
   @extend %title;
@@ -18,7 +18,7 @@
   text-align: center;
 }
 
-// Обёртка для элемента формы
+// Cover for form
 
 .buy__group {
   display: flex;
@@ -31,19 +31,19 @@
   }
 }
 
-// Лейбл для поля ввода
+// Label input
 
 .buy__label {
   margin-bottom: 4px;
 }
 
-// Обёртка для инпута и иконки
+// Cover for input and icon
 
 .buy__area {
   position: relative;
 }
 
-// Инпут для поля
+// Input field
 
 .buy__input {
   width: 100%;
@@ -81,7 +81,7 @@
   }
 }
 
-// Иконка внутри поля
+// Icon inside filed
 
 .buy__icon {
   position: absolute;
@@ -102,7 +102,7 @@
   }
 }
 
-// Обёртка-лейбл для поля комментария
+// Cover for comment field
 
 .buy__commit {
   display: flex;
@@ -115,7 +115,7 @@
   }
 }
 
-// Поле ввода для поля комментария
+// Input field for the field
 
 .buy__textarea {
   width: 100%;
@@ -145,7 +145,7 @@
   }
 }
 
-// Выпадающий список
+// Pop list
 
 .buy__group--label {
   width: 100%;
@@ -173,19 +173,19 @@
   -moz-appearance: none;
   appearance: none;
 
-    background: url(../images/icons/Vector-down-pink.png) 96% / 10px no-repeat;
+  background: url(../images/icons/Vector-down-pink.png) 96% / 10px no-repeat;
 
-    @media screen and (min-width: 768px) {
-      background: url(../images/icons/Vector-down-pink.png) 98% / 10px no-repeat;      
-    }
-    }
+  @media screen and (min-width: 768px) {
+    background: url(../images/icons/Vector-down-pink.png) 98% / 10px no-repeat;
+  }
+}
 
 .buy__optgroup {
   color: $primary-text-color;
   font-size: 16px;
 }
 
-// Политика для формы (чекбокс и текст)
+// Form policy
 
 .policy-block {
   display: flex;
@@ -197,7 +197,7 @@
   cursor: pointer;
 }
 
-// Каркас под иконку чекбокса
+// Frame for the checkbox icon
 
 .policy__icon::before {
   display: inline-block;
@@ -214,7 +214,7 @@
   transition: all $transition-duration $timing-function;
 }
 
-// Иконка чекбокса в нажатом состоянии
+// The checkbox icon is pressed
 
 .checkbox:checked + .policy__icon::before {
   vertical-align: middle;
@@ -227,18 +227,18 @@
   background-origin: border-box;
 }
 
-// Текст рядом с чекбоксом
+// Text next to the checkbox
 
 .policy__text {
   @include font(400, 14px, 1.16);
 }
 
-// Ссылка в тексте рядом с чекбоксом
+// Link in the text next to the checkbox
 .policy__link {
   color: $primary-accent-color;
 }
 
-// Обёртка для кнопки
+// Cover for the button
 
 .btn-block {
   text-align: center;

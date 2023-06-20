@@ -6,7 +6,7 @@
   text-transform: uppercase;
 }
 
-//Герой
+//Heroe
 .hero__title--primary {
   @extend %title;
 
@@ -45,7 +45,7 @@
   }
 }
 
-// Заголовки секций, h2
+// Section headers, h2
 .section__title {
   @extend %title;
 
@@ -68,7 +68,7 @@
   }
 }
 
-// Подзаголовок секций, <p>
+// Subtitle of sections, <p>
 .section__subtitle {
   @extend %title;
 
@@ -112,7 +112,7 @@
   }
 }
 
-// Заголовок секции About /Statistics (цифры)
+// Title of the About
 .chapter__title--stat {
   @extend %title;
 

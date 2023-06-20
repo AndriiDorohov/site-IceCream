@@ -1,4 +1,4 @@
-// Бекдроп для модального окна
+// A backdoor for a modal window
 
 .backdrop {
   position: fixed;
@@ -29,7 +29,7 @@
   }
 }
 
-// Модальное окно
+// Modal Window
 
 .modal {
   position: relative;
@@ -69,7 +69,7 @@
   }
 }
 
-// Кнопка закрытия модального окна
+//Modal window close button
 
 .modal__close-btn {
   position: absolute;
@@ -99,7 +99,7 @@
   }
 }
 
-// Иконка для кнопки закрытия модального окна
+//Icon for the modal window close button
 
 .modal__close-icon {
   width: 18px;

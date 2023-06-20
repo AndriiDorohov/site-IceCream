@@ -1,19 +1,13 @@
-// по умолчанию стили для мобилок
+// default styles for mobile
 .ice-locations {
   background: linear-gradient($white-color 90px, $section-bg-secondary 0 100%);
 
   @media screen and (min-width: 768px) and (max-width: 1279px) {
-    background: linear-gradient(
-      $white-color 115px,
-      $section-bg-secondary 0 100%
-    );
+    background: linear-gradient($white-color 115px, $section-bg-secondary 0 100%);
   }
 
   @media screen and (min-width: 1280px) {
-    background: linear-gradient(
-      $white-color 139px,
-      $section-bg-secondary 0 100%
-    );
+    background: linear-gradient($white-color 139px, $section-bg-secondary 0 100%);
   }
 
   &--background {
@@ -109,7 +103,7 @@
   }
 }
 
-// стили для таблета
+// styles for a tabletop
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .location {
     flex-wrap: nowrap;
@@ -155,7 +149,7 @@
   }
 }
 
-// стили для десктопа
+// styles for a desktop
 @media screen and (min-width: 1280px) {
   .location {
     margin-bottom: 86px;
@@ -205,7 +199,7 @@
   }
 }
 
-// Разметка кнопок
+// Button layout
 
 .btns-list {
   @media screen and (min-width: 768px) {
@@ -217,7 +211,6 @@
     margin-left: auto;
     margin-right: auto;
     width: 162px;
-    // padding: 12px 0 12px;
     margin-bottom: 10px;
     border-radius: 22px;
     text-align: center;

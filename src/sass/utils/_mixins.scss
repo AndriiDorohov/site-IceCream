@@ -1,4 +1,4 @@
-// Миксин со шрифтом (насыщенность, размер, высота строки)
+// Font mixin (saturation, size, line height)
 
 @mixin font($fw, $fs, $lh) {
   font-weight: $fw;
@@ -6,7 +6,7 @@
   line-height: $lh;
 }
 
-// Миксин для флексов (выравнивание в ряд + по центру в ширину + по высоте)
+// Mixin for flexi (alignment in a row + centered in width + by height)
 
 @mixin flexbox($jc: center, $ai: center) {
   display: flex;
@@ -14,7 +14,7 @@
   align-items: $ai;
 }
 
-// Миксин для адаптива (актуализировать и проверить на корректость работы!)
+// Mixin for adaptive
 
 @mixin for-size($range) {
   $mobile: 320px;
@@ -46,10 +46,4 @@
       @content;
     }
   }
-
-  // usage
-
-  //   @include for-size(desktop) {
-  //     padding: 20px;
 }
-//
